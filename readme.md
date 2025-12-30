@@ -107,15 +107,6 @@ Positive EV indicates a profitable call in expectation.
 
 ---
 
-## Design goals
-
-- Correctness over cleverness
-- Clear separation of concerns
-- Minimal dependencies
-- Reproducible simulations
-
----
-
 ## Disclaimer
 
 This software is for educational and analytical purposes.
