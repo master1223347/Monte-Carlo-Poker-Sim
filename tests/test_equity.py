@@ -1,10 +1,17 @@
 # tests/test_equity.py
 # pytest tests for the monte carlo equity engine
-from src.equity import monte_carlo_equity
-
 import sys
 from pathlib import Path
 import pytest
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+# IGNORE RUFF ERRORS
+from src.equity import monte_carlo_equity
+
+
 
 # ensure project root is importable so we can import src as a package
 ROOT = Path(__file__).resolve().parents[1]

@@ -1,10 +1,16 @@
 # tests/test_ev.py
 # pytest tests for the monte carlo EV engine
-from src.ev import monte_carlo_ev
-
 import sys
 from pathlib import Path
 import pytest
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+#IGNORE RUFF ERRORS
+from src.ev import monte_carlo_ev
+
 
 # make project importable
 ROOT = Path(__file__).resolve().parents[1]
