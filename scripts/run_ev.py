@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # scripts/run_ev.py
 # simple CLI to run equity and EV Monte Carlo for a given poker state
+import sys
 from src.state import PokerState
 from src.equity import monte_carlo_equity
 from src.ev import monte_carlo_ev
 
-import sys
 from pathlib import Path
 import argparse
 import time
