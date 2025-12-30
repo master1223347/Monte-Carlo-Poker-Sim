@@ -3,20 +3,18 @@
 # simple CLI to run equity and EV Monte Carlo for a given poker state
 import sys
 from pathlib import Path
-from src.state import PokerState
-from src.equity import monte_carlo_equity
-from src.ev import monte_carlo_ev
-
 import argparse
 import time
 
 # ensure project src is importable when running the script in-place
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "src"
-if str(SRC) not in sys.path:
-    sys.path.insert(0, str(SRC))
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
-
+#IGNORE ANY RUFF ERRORS 
+from src.state import PokerState
+from src.equity import monte_carlo_equity
+from src.ev import monte_carlo_ev
 
 
 def parse_cards_arg(s: str):
