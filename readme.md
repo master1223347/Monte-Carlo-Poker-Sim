@@ -35,24 +35,24 @@ Both are computed by simulating many possible completions of the hand.
 
 ## Project structure
 
-project/
-├── src/
-│   ├── cards.py        Card and deck utilities
-│   ├── state.py        PokerState definition and validation
-│   ├── equity.py       Monte Carlo equity estimation
-│   ├── ev.py           Monte Carlo EV estimation
-│   └── __init__.py
-│
-├── scripts/
-│   └── run_ev.py       Command line runner for simulations
-│
-├── tests/
-│   ├── test_equity.py
-│   └── test_ev.py
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
+    project/
+    ├── src/
+    │   ├── cards.py        Card and deck utilities
+    │   ├── state.py        PokerState definition and validation
+    │   ├── equity.py       Monte Carlo equity estimation
+    │   ├── ev.py           Monte Carlo EV estimation
+    │   └── __init__.py
+    │
+    ├── scripts/
+    │   └── run_ev.py       Command line runner for simulations
+    │
+    ├── tests/
+    │   ├── test_equity.py
+    │   └── test_ev.py
+    │
+    ├── requirements.txt
+    ├── .gitignore
+    └── README.md
 
 ---
 
